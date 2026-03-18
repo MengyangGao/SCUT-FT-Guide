@@ -1,0 +1,98 @@
+﻿\documentclass[12pt,a4paper]{article}
+\usepackage{ctex}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{array}
+\usepackage{setspace}
+\usepackage{xeCJK}
+\usepackage{indentfirst}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{caption}
+\usepackage{subcaption}
+
+% 设置页边距
+\geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+
+% 设置行距
+\linespread{1.0}
+
+% 取消首行缩进
+\setlength{\parindent}{0em}
+
+% 设置默认字体为宋体小四
+\setCJKmainfont[BoldFont=SimHei]{SimSun}
+\zihao{-4}
+
+\begin{document}
+
+% 页眉部分
+\begin{center}
+  \begin{tabular}{p{0.3\textwidth}p{0.7\textwidth}}
+    \includegraphics[width=0.3\textwidth]{assets/scut_logo.png} &
+    \zihao{3}\songti\textbf{大学物理实验（一）实验报告}
+  \end{tabular}
+\end{center}
+
+% 标题
+\begin{center}
+  {\zihao{-3}\songti\textbf{超声波探测综合实验}}
+\end{center}
+
+\vspace{0.8cm}
+
+% 学生信息表格（改为下划线样式）
+\noindent \begin{tabular}{@{}llll}
+24级\underline{\makebox[3cm][c]{x}} 班 & 
+姓名\underline{\makebox[3cm][c]{Pinco Li}} & 
+小组序号\underline{\makebox[3cm][c]{x}} \\[2ex]
+\end{tabular}
+
+\noindent \begin{tabular}{@{}llll}
+实验日期 2025 年\underline{\makebox[1cm][c]{6}} 月 \underline{\makebox[1cm][c]{13}} 日 
+& 第 16 周 
+& 星期\underline{\makebox[2cm][c]{五}} 
+& 指导老师\underline{\makebox[2cm][c]{x}} \\[2ex]
+\end{tabular}
+
+\noindent 同组同学\underline{\makebox[5cm][c]{x}}
+
+\vspace{0.8cm}
+
+% 标题，需要使用粗体而非section
+\textbf{一、实验目的}
+
+1. 理解超声探头的指向性；
+
+2. 掌握超声波探测原理和定位方法。
+
+\vspace{0.6cm}
+
+\textbf{二、实验仪器}
+
+COC-CSTS-A 型超声波探伤及特性综合实验仪、COS-620 型示波器（20MHz）、CSK-IB 型铝试块、钢板尺、耦合剂（水）等。
+
+\vspace{0.6cm}
+
+\textbf{三、实验原理}
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{assets/fig1.jpg}
+    \caption{直探头探测缺陷深度}
+    \label{fig:cursor}
+\end{figure}
+
+超声探头发射能量的指向性与探头的几何尺寸和波长有直接的关系。一般来讲，波长越小，频率越高，指向性越好；尺寸越大，指向性越好。可以用公式表示如下：
+
+$$\theta = 2\arcsin\left(1.22\frac{\lambda}{D}\right)$$
+
+对具有一定指向性要求的超声波探头，采用较高的频率可以使探头的尺寸变小。在实际应用中，通常我们用偏离中心轴线后振幅减小一半的位置表示声束的边界。在同一深度位置，中心轴线上的能量最大，当偏离中心轴线到位置A、A'时，能量减小到最大值的一半。其中$\theta$角定义为探头的扩散角。$\theta$越小，探头方向性越好，定位精度越高。
+
+在进行缺陷定位时，必须找到缺陷反射回波最大的位置，使被测缺陷处于探头的中心轴线上，然后测量缺陷反射回波对应的时间，根据工件的声速可以计算出缺陷到探头入射点的垂直深度或水平距离。
+
+\end{document}
