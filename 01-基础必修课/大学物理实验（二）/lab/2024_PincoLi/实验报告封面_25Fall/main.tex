@@ -1,0 +1,138 @@
+﻿\documentclass[12pt,a4paper]{article}
+\usepackage{ctex}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{array}
+\usepackage{setspace}
+\usepackage{xeCJK}
+\usepackage{indentfirst}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{float}
+\usepackage{subfigure}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{caption}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{matlab-prettifier}
+
+% 页边距
+\geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+% 默认宋体小四
+\setCJKmainfont[BoldFont=SimHei]{SimSun}
+\zihao{-4}
+\linespread{1.25} % 小四字通常 1.25 倍行距更接近 Word 默认
+
+\lstdefinestyle{Matlab-boxed}{
+  style=Matlab-editor,     % 继承你现在的配色与语法高亮
+  frame=single,            % 画单线边框
+  framerule=0.6pt,         % 边框粗细
+  rulecolor=\color{black}, % 边框颜色
+  framesep=6pt,            % 代码与边框的内边距
+  backgroundcolor=\color{black!2}, % 淡灰底，可按需删掉
+%   xleftmargin=2em, xrightmargin=2em % 让框整体内缩一点（可选）
+}
+
+\begin{document}
+% 实验名称（小二黑体、居中）
+\begin{center}
+  {\zihao{2}\heiti 实验名称}
+\end{center}
+% 年级 专业 姓名 座位号（宋体小四、居中、段前后 0.5 行）
+\vspace{0.5\baselineskip}
+\begin{center}
+  （\textbf{年级}\ \underline{2024 级}\quad \textbf{专业}\ \underline{x} \quad \textbf{姓名}\ \underline{Pinco Li} \quad \textbf{座位号} \ \underline{5}）
+\end{center}
+\vspace{0.5\baselineskip}
+
+\section{实验目的}
+
+% 在此填写实验目的
+
+\section{实验仪器}
+
+\begin{enumerate}
+    \item 
+    \item 
+\end{enumerate}
+
+% 如需插入仪器图片
+% \begin{figure}[H]
+%     \centering
+%     \begin{minipage}[t]{0.48\textwidth}
+%         \centering
+%         \includegraphics[width=\textwidth]{assets/仪器1.jpg}
+%         \caption{仪器名称1}
+%         \label{fig:instrument1}
+%     \end{minipage}
+%     \hfill
+%     \begin{minipage}[t]{0.48\textwidth}
+%         \centering
+%         \includegraphics[width=\textwidth]{assets/仪器2.jpg}
+%         \caption{仪器名称2}
+%         \label{fig:instrument2}
+%     \end{minipage}
+% \end{figure}
+
+\section{实验原理}
+
+% 在此填写实验原理
+
+% 公式示例：
+% \begin{align}
+% E = mc^2 \tag{1}
+% \end{align}
+
+\subsection{子标题（如需要）}
+
+% 子章节内容
+
+\section{实验步骤}
+
+% 在此填写实验步骤
+
+\section{数据记录与处理}
+
+% 实验数据和处理说明
+
+\subsection{实验数据}
+
+% 数据表格示例：
+% \begin{table}[H]
+% \centering
+% \caption{实验数据表}
+% \begin{tabular}{|c|c|c|}
+% \hline
+% 测量项 & 数值 & 单位 \\
+% \hline
+%  &  &  \\
+% \hline
+% \end{tabular}
+% \end{table}
+
+\subsection{数据处理}
+
+% 数据处理过程
+
+\subsection{实验结果图像}
+
+% 插入图片示例：
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics[width=0.8\textwidth]{assets/结果图.png}
+%     \caption{实验结果图}
+%     \label{fig:result}
+% \end{figure}
+
+% 如需添加附录和MATLAB代码
+% \appendix
+% 
+% \section{数据处理MATLAB代码}
+% 
+% \begin{lstlisting}[style=Matlab-boxed,caption={数据处理代码}]
+% clear; clc; close all;
+% % 在此编写MATLAB代码
+% \end{lstlisting}
+
+\end{document}
